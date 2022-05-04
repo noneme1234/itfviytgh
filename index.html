@@ -1,678 +1,82 @@
-<html lang="ru" class="translated-ltr">
-<body>
-<div class="wrapper">
-<div class="wrapper-main wrapper-container">
-<header class="header">
-<div class="header__inner d-flex ai-center">
-<div class="header__logo logo d-flex jc-center">
-<a href="/"><img src="/templates/default/images/logo.png" width="70px" height="70px" alt="Логотип сайта"></a>
-</div>
-<div class="header__search stretch-free-width">
-<form id="quicksearch" method="POST">
-<input type="hidden" name="do" value="search"> <input type="hidden" name="subaction" value="search">
-<input class="header__search-input" id="story" name="story" type="text" autocomplete="off" placeholder="Искать на сайте">
-<button class="header__search-btn d-flex jc-center ai-center" type="submit" data-tippy-content="Начать поиск"><span class="far fa-search"></span></button>
-</form>
-</div>
-<div class="header__auth">
-<div class="header__sign-in btn icon-at-left js-show-login">
-<span class="far fa-lock"></span>Войти
-</div>
-</div>
-<div class="header__btn-mobile-menu hidden js-show-mobile-menu"><span class="far fa-list"></span></div>
-</div>
-</header>
-<div class="content">
-<div class="colums d-flex">
-<aside class="sidebar">
-<ul class="section nav-list js-this-in-mobile-menu">
-<li class="nav-list__auth js-show-login"><span class="far fa-sign-in-alt"></span><a href="javascript:void(0)">Войти</a></li>
-<li class="nav-list__auth"><span class="far fa-user-plus"></span><a href="/?do=register">Регистрация</a></li>
-<li class="nav-list__submenu">
-<span class="far fa-map"></span><a href="/karty-dlya-minecraft/">Карты</a>
-<ul class="nav-list__hidden d-flex jc-space-between">
-<li><a href="/spavny-dlya-serverov/">Серверные спавны</a></li>
-</ul>
-</li>
-<li><span class="far fa-upload"></span><a href="/plaginy/">Плагины</a></li>
-<li><span class="far fa-wrench"></span><a href="/mody/">Моды</a></li>
-<li class="nav-list__submenu">
-<span class="far fa-paint-roller"></span><a href="/intro/">Графика</a>
-<ul class="nav-list__hidden d-flex jc-space-between">
-<li><a href="/shapki-dlya-kanala-youtube/">Графика YouTube</a></li>
-</ul>
-</li>
-<li><span class="far fa-brush"></span><a href="/skiny/">Скины</a></li>
-<li><span class="far fa-shopping-cart" style="color: #E91E63"></span><a href="javascript:void(0)" onclick="DLEalert('Маркет временно недоступен. Приносим свои извинения за временные неудобства','Информация');">Маркет</a></li>
-<li><span class="far fa-tag"></span><a href="/klienty/">Клиенты</a></li>
-<li><span class="far fa-window-restore"></span><a href="/tekstury/">Текстуры</a></li>
-<li><span class="far fa-file-search"></span><a href="/shablony/">Шаблоны</a></li>
-<li><span class="far fa-fire-extinguisher"></span><a href="/chity/">Читы</a></li>
-<li><span class="far fa-bookmark"></span><a href="/stati-pro-minecraft/">Статьи</a></li>
-<li><span class="far fa-headphones"></span><a href="/muzyka/">Музыка</a></li>
-<li><span class="far fa-dice-d6"></span><a href="/programmy/">Программы</a></li>
-<li><span class="far fa-megaphone"></span><a href="/novosti/">Новости</a></li>
-</ul>
-<div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Инструменты <i class="far fa-shovel"></i></div>
-<ul class="section__content nav-list nav-list--without-icon">
-<li><a href="/generator-dostizhenij.html">Создать достижение</a></li>
-<li><a href="/uznat-uuid-igroka.html">Узнать UUID</a></li>
-<li><a href="/uznat-niknejm-po-uuid.html">Узнать никнейм</a></li>
-<li><a href="/poluchit-plasch-igroka.html">Получить плащ</a></li>
-<li><a href="/poluchit-skin-igroka.html">Получить скин</a></li>
-<li><a href="/instrumenty.html">Другие</a></li>
-</ul>
-</div>
-<div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Соц. сети <i class="far fa-share-alt"></i></div>
-<ul class="section__content nav-list nav-list--without-icon">
-<li><a href="https://discord.gg/bfsGkQnDGV" target="_blank" rel="noopener noreferrer nofollow">Сервер Discord</a></li>
-<li><a href="https://t.me/minecraft_double" target="_blank" rel="noopener noreferrer nofollow">Телеграм</a></li>
-</ul>
-</div>
-<div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Лучшее <i class="far fa-trophy"></i></div>
-<div class="section__content">
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/763-dle-shadow-craft.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036864_minecraft-double.ru_1474836219_snimok.png" alt="DLE Shadow Craft">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DLE Shadow Craft</font></font></div>
-<div class="item__subtitle ws-nowrap">9 785 пр. / <span id="ratig-layer-763"><span class="ratingtypeplusminus ratingplus">+18</span></span></div>
-</div>
-</a>
-</div>
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/790-dle-106-shablon-oneland-original.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036511_minecraft-double.ru_1535191410_screencapture-oneland-su-2018-08-25-13_01_46.png" alt="[DLE 10.6] [ШАБЛОН] Oneland ОРИГИНАЛ">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[DLE 10.6] [ШАБЛОН] Oneland ОРИГИНАЛ</font></font></div>
-<div class="item__subtitle ws-nowrap">8 531 пр. / <span id="ratig-layer-790"><span class="ratingtypeplusminus ratingplus">+10</span></span></div>
-</div>
-</a>
-</div>
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/765-unikalnyy-monitoring-dlya-servera.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036597_minecraft-double.ru_1475387429_mon.png" alt="Простой мониторинг для сервера.">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap">Простой мониторинг для сервера.</div>
-<div class="item__subtitle ws-nowrap">4 435 пр. / <span id="ratig-layer-765"><span class="ratingtypeplusminus ratingplus">+7</span></span></div>
-</div>
-</a>
-</div>
-</div>
-</div>
-</aside>
-<main class="main stretch-free-width">
-<div class="section">
-<div class="section__header">
-<h1 class="section__title"><a href="#"><span class="fas fa-map"></span></a> Карты</h1>
-</div>
-</div>
-<div class="filter-block">
-<form data-dlefilter="dle-filter" class="filter-block__form">
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<select name="sort">
-<option value="date">По дате</option>
-<option value="title">По названию</option>
-<option value="comm_num">По комментариям</option>
-<option value="news_read">По просмотрам</option>
-<option value="rating">По рейтингу</option>
-</select>
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<input name="l.title" type="text" placeholder="Название">
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<select name="j.b.minecraft-minimal-version;j.b.minecraft-version">
-<option value="">Версия</option>
-<option value="1.5.2">1.5.2</option>
-<option value="1.6.1">1.6.1</option>
-<option value="1.6.2">1.6.2</option>
-<option value="1.6.4">1.6.4</option>
-<option value="1.7.2">1.7.2</option>
-<option value="1.7.4">1.7.4</option>
-<option value="1.7.5">1.7.5</option>
-<option value="1.7.6">1.7.6</option>
-<option value="1.7.7">1.7.7</option>
-<option value="1.7.8">1.7.8</option>
-<option value="1.7.9">1.7.9</option>
-<option value="1.7.10">1.7.10</option>
-<option value="1.8">1.8</option>
-<option value="1.8.1">1.8.1</option>
-<option value="1.8.2">1.8.2</option>
-<option value="1.8.3">1.8.3</option>
-<option value="1.8.4">1.8.4</option>
-<option value="1.8.5">1.8.5</option>
-<option value="1.8.6">1.8.6</option>
-<option value="1.8.7">1.8.7</option>
-<option value="1.8.8">1.8.8</option>
-<option value="1.8.9">1.8.9</option>
-<option value="1.9">1.9</option>
-<option value="1.9.1">1.9.1</option>
-<option value="1.9.2">1.9.2</option>
-<option value="1.9.3">1.9.3</option>
- <option value="1.9.4">1.9.4</option>
-<option value="1.10">1.10</option>
-<option value="1.10.1">1.10.1</option>
-<option value="1.10.2">1.10.2</option>
-<option value="1.11">1.11</option>
-<option value="1.11.1">1.11.1</option>
-<option value="1.11.2">1.11.2</option>
-<option value="1.12">1.12</option>
-<option value="1.12.1">1.12.1</option>
-<option value="1.12.2">1.12.2</option>
-<option value="1.13">1.13</option>
-<option value="1.13.1">1.13.1</option>
-<option value="1.13.2">1.13.2</option>
-<option value="1.14">1.14</option>
-<option value="1.14.1">1.14.1</option>
-<option value="1.14.2">1.14.2</option>
-<option value="1.14.3">1.14.3</option>
-<option value="1.14.4">1.14.4</option>
-<option value="1.15">1.15</option>
-<option value="1.15.1">1.15.1</option>
-<option value="1.15.2">1.15.2</option>
-<option value="1.16">1.16</option>
-<option value="1.16.1">1.16.1</option>
-<option value="1.16.2">1.16.2</option>
-<option value="1.16.3">1.16.3</option>
-<option value="1.16.4">1.16.4</option>
-<option value="1.16.5">1.16.5</option>
-<option value="1.1">1.17</option>
-<option value="1.17.1">1.17.1</option>
-<option value="1.18">1.18</option>
-<option value="1.18.1">1.18.1</option>
-</select>
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<select name="b.minecraft-edition">
-<option value="">Издание</option>
-<option value="java"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Джава</font></font></option>
-<option value="bedrock"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Бедрок (PE)</font></font></option>
-</select>
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<select name="b.maps-themes">
-<option value="">Тематика</option>
-<option value="Прохождение">Прохождение</option>
-<option value="Приключения">Приключения</option>
-<option value="Хоррор">Хоррор</option>
-<option value="Побег">Побег</option>
-<option value="Постройки">Постройки</option>
-<option value="Паркур"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Паркур</font></font></option>
-<option value="На несколько человек">На несколько человек</option>
-<option value="Головоломки">Головоломки</option>
-<option value="Выживание">Выживание</option>
-<option value="Мини-игры">Мини-игры</option>
-</select>
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<button class="form__btn form__btn--primary" data-dlefilter="submit" type="button"><span class="far fa-search"></span> </button>
-</div>
-</div>
-<div class="filter-block__cell">
-<div class="filter-block__cell-content">
-<button class="form__btn form__btn--primary" data-dlefilter="reset" type="button">Сброс</button>
-</div>
-</div>
-</form>
-</div>
-<style>
-    .category_list {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin: -10px;
-        margin-bottom: 40px;
-    }
-    .category_list li {
-        min-width: 25%;
-        max-width: 100%;
-    } 
-    .category_list li a {
-        display: block;
-        background: #fff;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 5px 10px 5px;
-        white-space: nowrap;
-        text-align: center;
-        box-shadow: inset 0 0 0 1px #e3e3e3;
-    }
-    .category_list li a:hover {
-        box-shadow: inset 0 0 0 1px var(--secondary-color);
-    }
-</style>
-<ul class="category_list">
-<li><a href="/spavny-dlya-serverov/">Спавны для серверов</a></li>
-</ul>
-<div class="inner-page__main  section__items">
-<div id="dle-content"><div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/756-spavn-dlya-serverov-18-by-known_channel.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-08/thumbs/1471071103_2016-08-13_10.30.59.png" alt="Спавн для серверов 1.8+ By Known_Channel">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">Спавн для серверов 1.8+ By Known_Channel</h3>
-<div class="short-story__text stretch-free-width">Спавн для сервера Minecraft 1.8+ By Known_Channel. На спавне есть все необходимое для старта и выживания в игре. Что есть на спавне? PvP...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">арсен262001</font></font></span>
-<span>89 581 просм.</span>
-<span>0.9</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/742-poezd-v-maynkraft.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-03/thumbs/1459351159_2016-03-30_19.58.44.png" alt="[MAP] Карта Поезд в Майнкрафт">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Карта Поезд в Майнкрафт</h3>
-<div class="short-story__text stretch-free-width">Карта с поездом для Minecraft. В состав поезда входят 18 вагонов: 7 из них - плацкартные, 1 "вагон ресторан" и 10 купейных. В...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">АлександрЮ</font></font></span>
-<span>25 910 просм.</span>
-<span>0.7</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/739-map-karta-gostinica-pinelo-dlya-minecraft.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-02/thumbs/1454868022_2016-02-06_1703379856180.png" alt="[MAP] Карта Гостиница &quot;Pinelo&quot; для Minecraft">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Карта Гостиница "Pinelo" для Minecraft</h3>
-<div class="short-story__text stretch-free-width">На карте выстроена большая гостиница с роскошным интерьером и большими особенностями. В гостинице есть: кинозал, танцевальная площадка,...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Рег</font></font></span>
-<span>19 084 просм.</span>
-<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0.9</font></font></span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/738-map-karta-zvezdnye-voyny-tysyacheletniy-sokol.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-01/thumbs/1453811825_2015-12-17_2249089687282.jpg" alt="[MAP] Карта Звездные войны: Тысячелетний сокол">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Карта Звездные войны: Тысячелетний сокол</h3>
-<div class="short-story__text stretch-free-width">Легендарный корабль "Тысячелетний Сокол" из вселенной «Звездные войны», пилотируемый Ханом Соло и его другом Чубаккой. Установка...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span>Furakos</span>
-<span>19 840 просм.</span>
-<span>0.9</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/737-map-karta-flying-dutchman-letuchiy-gollandec.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-01/thumbs/1453811023_flying_dutchman_0018450639.jpg" alt="[MAP] Карта Flying Dutchman «Летучий голландец»">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Карта Flying Dutchman «Летучий голландец»</h3>
-<div class="short-story__text stretch-free-width">Корабль из фильма "Пираты Карибского Моря". Летучий голландец - это парусный корабль-призрак, который обязан вечно бороздить...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span>Reg</span>
-<span>19 565 просм.</span>
-<span>0.8</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/736-karta-metro.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2016-01/thumbs/1453293451_2016-01-20_15.35.09.png" alt="[MAP] Скачать Карту метро для Minecraft">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Скачать Карту метро для Minecraft</h3>
-<div class="short-story__text stretch-free-width">Карта метро для Minecraft. По своим размерам она не очень большая, но как утверждает сам автор, она будет подвергнута доработке. Вход в...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span>mrmax2006</span>
-<span>26 881 просм.</span>
-<span>0.9</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/730-spawn-novogodniy-spavn-minelegasy-dlya-minecraft.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2015-12/thumbs/1450007131_2015-12-13_14.40.02.png" alt="[SPAWN] Новогодний спавн MineLegasy для Minecraft">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[SPAWN] Новогодний спавн MineLegasy для Minecraft</h3>
-<div class="short-story__text stretch-free-width">Данный спавн был сделан специально для новогодних праздников. На нем вы можете найти множество новогодних украшений: елки, подарки,...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span>Reg</span>
-<span>71 459 просм.</span>
-<span>0.9</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="short-story">
-<a class="short-story__link" href="https://minecraft-double.ru/karty-dlya-minecraft/723-map-karta-srednevekovyy-zamok-dlya-minecraft.html">
-<div class="short-story__inner d-flex">
-<div class="short-story__img img-fit-cover">
-<img src="/uploads/posts/2015-11/thumbs/1447778707_90238303.jpg" alt="[MAP] Карта &quot;Средневековый Замок&quot; для Minecraft">
-</div>
-<div class="short-story__desc stretch-free-width d-flex fd-column">
-<h3 class="short-story__title ws-nowrap">[MAP] Карта "Средневековый Замок" для Minecraft</h3>
-<div class="short-story__text stretch-free-width">На карте расположен средневековый замок для игры Minecraft. Он имеет все защитные функции: высоки стены, башни, расположен на высоком...</div>
-<div class="short-story__bottom d-flex ai-center">
-<div class="short-story__meta ws-nowrap stretch-free-width">
-<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">мультфильм</font></font></span>
-<span>11 043 просм.</span>
-<span>0.8</span>
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<nav class="navigation clr d-flex jc-center" id="navigation"><span>1</span> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/2/">2</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/3/">3</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/4/">4</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/5/">5</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/6/">6</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/7/">7</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/8/">8</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/9/">9</a> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/10/">10</a> <span class="nav_ext">...</span> <a href="https://minecraft-double.ru/karty-dlya-minecraft/page/18/">18</a></nav></div>
-</div>
-<div class="section__header" style="border-top: 1px solid #e0e0e0;margin-top:40px;">
-<h1 class="section__title" style="padding-top: 30px;">О разделе <a href="#"><span class="far fa-quote-right"></span></a> </h1>
-</div>
-<div class="site-desc text clearfix">
-Здесь можно найти лучшие карты для Minecraft. Например, вы можете скачать карты для паркура, выживания, на прохождение вдвоем и другие. / Публикаций - 144
-</div>
-<script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script src="/engine/classes/min/index.php?g=general3&amp;v=c0e9b"></script>
-<script src="/engine/classes/min/index.php?f=engine/classes/js/jqueryui3.js,engine/classes/js/dle_js.js&amp;v=c0e9b" defer=""></script> <script>
-<!--
-var dle_root       = '/';
-var dle_admin      = '';
-var dle_login_hash = '8d3396d4f7098129a834ee39ce874b315457226f';
-var dle_group      = 5;
-var dle_skin       = 'default';
-var dle_wysiwyg    = '0';
-var quick_wysiwyg  = '2';
-var dle_min_search = '4';
-var dle_act_lang   = ["Да", "Нет", "Ввод", "Отмена", "Сохранить", "Удалить", "Загрузка. Пожалуйста, подождите..."];
-var menu_short     = 'Быстрое редактирование';
-var menu_full      = 'Полное редактирование';
-var menu_profile   = 'Профиль';
-var menu_send      = 'Сообщение';
-var menu_uedit     = 'Изменить';
-var dle_info       = 'Уведомление';
-var dle_confirm    = 'Подтверждение';
-var dle_prompt     = 'Ввод информации';
-var dle_req_field  = ["Заполните поле с именем", "Заполните поле с сообщением", "Заполните поле с темой сообщения"];
-var dle_del_agree  = 'Вы действительно хотите удалить? Данное действие невозможно будет отменить';
-var dle_spam_agree = 'Вы действительно хотите отметить пользователя как спамера? Это приведёт к удалению всех его комментариев';
-var dle_c_title    = 'Отправка жалобы';
-var dle_complaint  = 'Введите описание для вашей жалобы';
-var dle_mail       = 'Ваша почта (необязательно)';
-var dle_big_text   = 'Выделен слишком большой участок текста.';
-var dle_orfo_title = 'Укажите комментарий для администрации к найденной ошибке на странице:';
-var dle_p_send     = 'Отправить';
-var dle_p_send_ok  = 'Уведомление успешно отправлено';
-var dle_save_ok    = 'Изменения успешно сохранены. Обновить страницу?';
-var dle_reply_title= 'Ответ на комментарий';
-var dle_tree_comm  = '0';
-var dle_del_news   = 'Удалить статью';
-var dle_sub_agree  = 'Вы действительно хотите подписаться на комментарии к данной публикации?';
-var dle_captcha_type  = '1';
-var dle_share_interesting  = ["Поделиться ссылкой на выделенный текст", "Twitter", "Facebook", "Вконтакте", "Прямая ссылка:", "Нажмите правой клавишей мыши и выберите «Копировать ссылку»"];
-var DLEPlayerLang     = {prev: 'Предыдущий',next: 'Следующий',play: 'Воспроизвести',pause: 'Пауза',mute: 'Выключить звук', unmute: 'Включить звук', settings: 'Настройки', enterFullscreen: 'На полный экран', exitFullscreen: 'Выключить полноэкранный режим', speed: 'Скорость', normal: 'Обычная', quality: 'Качество', pip: 'Режим PiP'};
-var allow_dle_delete_news   = false;
-var dle_search_delay   = false;
-var dle_search_value   = '';
-jQuery(function($){
-FastSearch();
-});
-//-->
-</script><script>
-let urlFilter = 0;
-let dleFilterJSData = [];
-let dleFilterId = 1;
-</script>
-</main>
-
-</div>
-
-</div>
-
-</div>
-<footer class="footer d-flex ai-center wrapper-container">
-<div class="footer__desc stretch-free-width">
-<ul class="footer__menu d-flex jc-flex-start">
-<li><a href="/rules.html">Правила</a></li>
-<li><a href="/politika-konfidencialnosti.html">Конфиденциальность</a></li>
-<li><a href="/publichnaja-oferta.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Предложение</font></font></a></li>
-<li><a href="/?do=feedback">Контакты</a></li>
-<li><a href="/api.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API</font></font></a></li>
-</ul>
-<div class="footer__copyright">Copyright © 2014 - 2022 / Все права защищены / <span>partner<b>@</b>minecraft-double.ru</span></div>
-</div>
-</footer>
-</div>
-<div class="login login--not-logged hidden">
-<div class="login__header d-flex jc-space-between ai-center">
-<div class="login__title stretch-free-width ws-nowrap">Войти <a href="/?do=register">Регистрация</a></div>
-<div class="login__close"><span class="far fa-times"></span></div>
-</div>
-<form method="post">
-<div class="login__content">
-<div class="login__row">
-<div class="login__caption">Логин:</div>
-<div class="login__input"><input type="text" name="login_name" id="login_name"></div>
-<span class="far fa-user"></span>
-</div>
-<div class="login__row">
-<div class="login__caption">Пароль: <a href="https://minecraft-double.ru/index.php?do=lostpassword">Забыли пароль?</a></div>
-<div class="login__input"><input type="password" name="login_password" id="login_password"></div>
-<span class="far fa-lock"></span>
-</div>
-<label class="login__row checkbox" for="login_not_save">
-<input type="checkbox" name="login_not_save" id="login_not_save" value="1">
-<span>Чужой компьютер</span>
-</label>
-<div class="login__row">
-<button class="form__btn form__btn--primary" type="submit"><span class="fas fa-sign-in"></span></button>
-<input name="login" type="hidden" id="login" value="submit">
-</div>
-</div>
-<div class="login__social">
-<div class="login__social-btns">
-<a href="https://oauth.vk.com/authorize?client_id=7699479&amp;redirect_uri=https%3A%2F%2Fminecraft-double.ru%2Findex.php%3Fdo%3Dauth-social%26provider%3Dvk&amp;scope=offline%2Cemail&amp;state=3b630dd3354142b1a2310515a4e134bc&amp;response_type=code&amp;v=5.90" target="_blank"><img src="/templates/default/images/social/5.png"></a>
-<a href="https://www.facebook.com/dialog/oauth?client_id=654221805721769&amp;redirect_uri=https%3A%2F%2Fminecraft-double.ru%2Findex.php%3Fdo%3Dauth-social%26provider%3Dfc&amp;scope=public_profile%2Cemail&amp;display=popup&amp;state=3b630dd3354142b1a2310515a4e134bc&amp;response_type=code" target="_blank"><img src="/templates/default/images/social/1.png"></a>
-<a href="https://accounts.google.com/o/oauth2/auth?client_id=168475614684-51t0c4bp8ct5s371fnej2g2s2pn41174.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fminecraft-double.ru%2Findex.php%3Fdo%3Dauth-social%26provider%3Dgoogle&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;state=3b630dd3354142b1a2310515a4e134bc&amp;response_type=code" target="_blank"><img src="/templates/default/images/social/2.png"></a>
-<a href="https://oauth.yandex.ru/authorize?client_id=2e31f185352e425195694c9b0e3ea6bd&amp;redirect_uri=https%3A%2F%2Fminecraft-double.ru%2Findex.php%3Fdo%3Dauth-social%26provider%3Dyandex&amp;state=3b630dd3354142b1a2310515a4e134bc&amp;response_type=code" target="_blank"><img src="/templates/default/images/social/6.png"></a>
-</div>
-</div>
-</form>
-</div>
-<script src="/engine/lazydev/dle_filter/lib/dle_filter.js.php" defer=""></script>
-<script src="/templates/default/lazydev/dle_filter/assets/dle_filter.js" defer=""></script>
-<script src="/engine/classes/min/index.php?f=/templates/default/js/libs.js,/templates/default/js/popper.js,/templates/default/js/tippy.js&amp;v=1" defer=""></script>
-<script type="text/javascript"> setTimeout(function(){(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(84914461, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });},5000) </script> <noscript><div><img src="https://mc.yandex.ru/watch/84914461" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "url": "https://minecraft-double.ru/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://minecraft-double.ru/index.php?story={search_term}&do=search&subaction=search",
-        "query-input":"required name=search_term"
-      }
-    }
-    </script>
-<script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "Minecraft Double",
-      "url": "https://minecraft-double.ru/",
-      "sameAs": [
-        "https://t.me/minecraft_double"
-      ]
-    }
-    </script>
-
-
-<div class="overlay hidden"></div><div class="mobile-menu" id="mobile-menu"><ul class="section nav-list js-this-in-mobile-menu">
-<li class="nav-list__auth js-show-login"><span class="far fa-sign-in-alt"></span><a href="javascript:void(0)">Войти</a></li>
-<li class="nav-list__auth"><span class="far fa-user-plus"></span><a href="/?do=register">Регистрация</a></li>
-<li class="nav-list__submenu">
-<span class="far fa-map"></span><a href="/karty-dlya-minecraft/">Карты</a>
-<ul class="nav-list__hidden d-flex jc-space-between">
-<li><a href="/spavny-dlya-serverov/">Серверные спавны</a></li>
-</ul>
-</li>
-<li><span class="far fa-upload"></span><a href="/plaginy/">Плагины</a></li>
-<li><span class="far fa-wrench"></span><a href="/mody/">Моды</a></li>
-<li class="nav-list__submenu">
-<span class="far fa-paint-roller"></span><a href="/intro/">Графика</a>
-<ul class="nav-list__hidden d-flex jc-space-between">
-<li><a href="/shapki-dlya-kanala-youtube/">Графика YouTube</a></li>
-</ul>
-</li>
-<li><span class="far fa-brush"></span><a href="/skiny/">Скины</a></li>
-<li><span class="far fa-shopping-cart" style="color: #E91E63"></span><a href="javascript:void(0)" onclick="DLEalert('Маркет временно недоступен. Приносим свои извинения за временные неудобства','Информация');">Маркет</a></li>
-<li><span class="far fa-tag"></span><a href="/klienty/">Клиенты</a></li>
-<li><span class="far fa-window-restore"></span><a href="/tekstury/">Текстуры</a></li>
-<li><span class="far fa-file-search"></span><a href="/shablony/">Шаблоны</a></li>
-<li><span class="far fa-fire-extinguisher"></span><a href="/chity/">Читы</a></li>
-<li><span class="far fa-bookmark"></span><a href="/stati-pro-minecraft/">Статьи</a></li>
-<li><span class="far fa-headphones"></span><a href="/muzyka/">Музыка</a></li>
-<li><span class="far fa-dice-d6"></span><a href="/programmy/">Программы</a></li>
-<li><span class="far fa-megaphone"></span><a href="/novosti/">Новости</a></li>
-</ul><div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Инструменты <i class="far fa-shovel"></i></div>
-<ul class="section__content nav-list nav-list--without-icon">
-<li><a href="/generator-dostizhenij.html">Создать достижение</a></li>
-<li><a href="/uznat-uuid-igroka.html">Узнать UUID</a></li>
-<li><a href="/uznat-niknejm-po-uuid.html">Узнать никнейм</a></li>
-<li><a href="/poluchit-plasch-igroka.html">Получить плащ</a></li>
-<li><a href="/poluchit-skin-igroka.html">Получить скин</a></li>
-<li><a href="/instrumenty.html">Другие</a></li>
-</ul>
-</div><div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Соц. сети <i class="far fa-share-alt"></i></div>
-<ul class="section__content nav-list nav-list--without-icon">
-<li><a href="https://discord.gg/bfsGkQnDGV" target="_blank" rel="noopener noreferrer nofollow">Сервер Discord</a></li>
-<li><a href="https://t.me/minecraft_double" target="_blank" rel="noopener noreferrer nofollow">Телеграм</a></li>
-</ul>
-</div><div class="section js-this-in-mobile-menu">
-<div class="section__subtitle section__header">Лучшее <i class="far fa-trophy"></i></div>
-<div class="section__content">
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/763-dle-shadow-craft.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036864_minecraft-double.ru_1474836219_snimok.png" alt="DLE Shadow Craft">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DLE Shadow Craft</font></font></div>
-<div class="item__subtitle ws-nowrap">9 785 пр. / <span id="ratig-layer-763"><span class="ratingtypeplusminus ratingplus">+18</span></span></div>
-</div>
-</a>
-</div>
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/790-dle-106-shablon-oneland-original.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036511_minecraft-double.ru_1535191410_screencapture-oneland-su-2018-08-25-13_01_46.png" alt="[DLE 10.6] [ШАБЛОН] Oneland ОРИГИНАЛ">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[DLE 10.6] [ШАБЛОН] Oneland ОРИГИНАЛ</font></font></div>
-<div class="item__subtitle ws-nowrap">8 531 пр. / <span id="ratig-layer-790"><span class="ratingtypeplusminus ratingplus">+10</span></span></div>
-</div>
-</a>
-</div>
-<div class="soon-item item">
-<a class="soon-item__link d-flex ai-center" href="https://minecraft-double.ru/shablony/765-unikalnyy-monitoring-dlya-servera.html">
-<div class="soon-item__img img-fit-cover">
-<img src="/uploads/posts/2021-08/thumbs/1629036597_minecraft-double.ru_1475387429_mon.png" alt="Простой мониторинг для сервера.">
-</div>
-<div class="soon-item__description item__description stretch-free-width">
-<div class="item__title ws-nowrap">Простой мониторинг для сервера.</div>
-<div class="item__subtitle ws-nowrap">4 435 пр. / <span id="ratig-layer-765"><span class="ratingtypeplusminus ratingplus">+7</span></span></div>
-</div>
-</a>
-</div>
-</div>
-</div></div><div class="mobile-menu-close"><span class="fas fa-times"></span></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Переводчик"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Исходный текст</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Предложить лучший вариант перевода</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div id="scrolltop"><span class="far fa-long-arrow-up"></span></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body><head>
-
-<title>Карты » Minecraft Doudle!- Скачай всё тут!</title><meta name="charset" content="utf-8">
-<meta name="title" content="Карты » Minecraft Doudle!- Скачай всё тут!">
-<meta name="description" content="Спавн для сервера Minecraft 1.8+ By Known_Channel. На спавне есть все необходимое для старта и выживания в игре. Что есть на спавне? PvP Spawner Mob (Спавнер мобов) Marry (Свадьбы) Mine (Шахта) Shop (Магазин) Portals (Порталы) Скачать с нашего сайта - Также Вы можете скачать спавн на Yandex.Disk">
-<meta name="keywords" content="Minecraft Double.ru, сайт про Minecraft, Minecraft моды скачать бесплатно, скачать шаблоны майнкрафт для DLE, скачать шаблоны бесплатно для Joombla Minecraft, Шаблоны Minecraft Ucoz, Готовые сервера Minecraft, Скачать готовый сервер Minecraft 1.5.2,Скачать готовый сервер Minecraft 1.6.2,Скачать готовый сервер Minecraft 1.7.2, Текстуры Minecraft, Скачать плагины для серверов Minecraft 1.5.2, Скачать карты на прохождение Minecraft, Раздача Minecraft аккаунтов бесплатно, Раздача Minecraft премиум аккаунтов, Раздача ключей майкрафта бесплатно, Скачать интро для канала YouTube Minecraft, Шаблоны для лаунчеров Minecraft скачать, Генератор Мониторинга серверов, Самый лучший брут аккаунтов Minecraft скачать,скачать моды для minecraft 1.7.4/1.7.2/1.6.2/1.6.4/1.5.2/1.2.5, скачать карты для майнкрафт 1.5.2, minecraft скачать торрент, скачать майнкрафт 1.7.2, сервер minecraft скачать, майнкрафт скачать бесплатно, бесплатный майнкрафт скачать, текстуры для minecraft 1.5.2, текстуры для майнкрафт 1.7.4, карты на прохождение minecraft, как сделать в minecraft, сборки майнкрафт, скачать minecraft с модами, майнкрафт 1.2.5, скачать скины для майнкрафт, майнкрафт 2, minecraft прохождение карт скачать 1.5.2, Спавны для серверов Minecraft скачать бесплатно, красивые карты для Minecraft,">
-<style data-tippy-stylesheet="">.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}</style><link rel="canonical" href="https://minecraft-double.ru/karty-dlya-minecraft/">
-<link rel="alternate" type="application/rss+xml" title="Карты » Minecraft Doudle!- Скачай всё тут!" href="https://minecraft-double.ru/karty-dlya-minecraft/rss.xml">
-<link rel="search" type="application/opensearchdescription+xml" title="Minecraft Doudle!- Скачай всё тут!" href="https://minecraft-double.ru/index.php?do=opensearch">
-<meta property="twitter:card" content="summary">
-<meta property="twitter:title" content="Карты » Minecraft Doudle!- Скачай всё тут!">
-<meta property="twitter:description" content="Спавн для сервера Minecraft 1.8+ By Known_Channel. На спавне есть все необходимое для старта и выживания в игре. Что есть на спавне? PvP Spawner Mob (Спавнер мобов) Marry (Свадьбы) Mine (Шахта) Shop (Магазин) Portals (Порталы) Скачать с нашего сайта - Также Вы можете скачать спавн на Yandex.Disk">
-<meta property="og:type" content="article">
-<meta property="og:site_name" content="Minecraft Doudle!- Скачай всё тут!">
-<meta property="og:title" content="Карты » Minecraft Doudle!- Скачай всё тут!">
-<meta property="og:description" content="Спавн для сервера Minecraft 1.8+ By Known_Channel. На спавне есть все необходимое для старта и выживания в игре. Что есть на спавне? PvP Spawner Mob (Спавнер мобов) Marry (Свадьбы) Mine (Шахта) Shop (Магазин) Portals (Порталы) Скачать с нашего сайта - Также Вы можете скачать спавн на Yandex.Disk">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="/templates/default/images/logo.png">
-<link rel="apple-touch-icon" href="/templates/default/images/logo.png">
-<meta name="theme-color" content="#ebebeb">
-<meta name="HandheldFriendly" content="true">
-<meta name="format-detection" content="telephone=no">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="mobile-web-app-capable" content="yes">
-<link type="text/css" rel="stylesheet" href="/engine/classes/min/index.php?f=/templates/default/css/fonts.css,/templates/default/css/fontawesome.css,/templates/default/css/common.css,/templates/default/css/styles.css,/templates/default/css/engine.css&amp;v=1">
-<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head></html>
+<html>
+ <head>
+ <title> Майнкрафт факты </title>
+ </head>
+ <body>
+  Многие подростки, юноши, а порой даже, и взрослые мужчины помешаны на майнкрафт. Многие посвящают этой игре достаточно большое количество времени, погружаясь в мир майнкрафт. Итак, давайте же поближе познакомимся с этой игрой.
+Вашему вниманию мы представляем самые интересные факты о майнкрафт:
+  <br>
+  1. Так как растет популярность этой игры с ней и увеличивается доход главного разработчика Маркуса Алексея Перссона, который составляет 350 000 долларов в день;
+  <br>
+  2. Нотч обладает достаточно высоким уровнем IQ, которым может похвастаться лишь 2% населения;
+  <br>
+  3. В марте 2012 года продажи были настолько высоки, что Майнкрафт вошла в топ-6 самых продающихся игр;
+  <br>
+Интересные факты о: [Minecraft].
+  4. Такие высокие продажи обусловлены дорогой рекламой, подумаете вы. Но это на самом деле совсем не так, а скорее наоборот. На рекламирование не потратили ни цента;
+  <br>
+  5. Благодаря статистике был выяснен еще один интересный факт о Майнкрафт - около 5% игроманов Майнкрафта на самом деле архитекторы;
+  <br>
+  6. А вот игроки, возможно, замечали, что каждое 1 июня можно увидеть поздравления с днем рождения Нотча;
+  <br>
+  7. Маркус, по-видимому, не любит принимать шаблонные решения, ведь иначе, как объяснить тот факт, что на суде он предложил уладить конфликт с Bethesda партией в Quake3: arena;
+  <br>
+  8. Алексей Перссонс также очень любит играть в компьютерные игры. Ведь, как стало известно, в игре Team fortress 2 он имеет собственную шляпу;
+  <br>
+  9. Нотча можно назвать сердцем компании Mojang, ведь именно он числится как владелец, разработчик и создатель Майнкрафт;
+  <br>
+  10. К сведению игроманов майнкрафт мы представляем еще один интересный факт - Маркус иногда посещает различные сервера, чтобы порадовать фанатов этой игры;
+  <br>
+  11. Ник Джеба еще один разработчик майнкрафт. У него есть свой именной, так сказать, пробел на клавиатуре;
+  <br>
+  12. Компания Sony пригласила Нотча на свою пресс-конференцию. Приглашение было раскрашено под золото, а также ему вручили копию оригинала игры Dungeon Master 2;
+ ,br>
+  13. На сегодня популярность этой игры выросла настолько, что в месяц число посетителей превышает 240 млн. человек;
+Интересные факты о: [Minecraft].
+ <br>
+  14. Многие школьники всего мира мечтают о том, чтобы на уроках поиграть в различные компьютерные игры. Для учеников одной из школ Стокгольма эта мечта стала реальностью. Ведь у них обязательным уроком является обучение Майнкрафт. По мнению педагогов это развивает детское мышление;
+  <br>
+  15. За всю историю существования эта игра имела несколько названий. Вначале "Cave Game", затем "Minecraft: Орден Камня" и только потом она стала называться "Minecraft";
+  <br>
+  16. Менялось не только название игры, но и персонажи. Изначально персонажа Minecraft звали "Minecraft Guy", и уже спустя некоторое время его переименовали на Стива;
+  <br>
+  17. А знаете ли вы, что в данный момент около 500 человек приобретают эту игру;
+  <br>
+  18. Многие утверждают, что компьютерные игры созданы для подростков и т. д., однако это не совсем так. Ведь 5 % игроков Майнкрафт - архитекторы;
+  <br>
+  19. Есть и те, кто пожелал остаться инкогнито. JunkBoy не захотел, чтобы о нем кто-то знал;
+  <br>
+  20. Вначале создания игра представляла из себя одну пещеру, где первыми блоками были булыжник и трава;
+  <br>
+  21. Каждый игрок знает, что верстак используется для определения частей света;
+Интересные факты о: [Minecraft].
+  <br>
+  22. К сведению пользователей "Minecraft" - чтобы понять, кто скрывается за снеговиком достаточно просто в него стать;
+  <br>
+  23. Всем известно, что железный голем защищает деревенских жителей, но мало кому известно, что также он может подарить им цветок;
+  <br>
+  24. Вначале игры солнце было круглым, однако позже разработчики решили сделать его квадратным;
+  <br>
+  25. А вот возможность кидать яйца добавлена благодаря спору Нотча с игроком, который пообещал, что съест свой USB-кабель, если тот в свою очередь добавит это новшество;
+  <br>
+  26. А знали ли вы, что скелет начинает стареть в тот момент, когда вы к нему начинаете приближаться;
+Интересные факты о: [Minecraft].
+  <br>
+  27. 1000 домов из грязи - именно такое их количество создается каждую минуту в мире "Minecraft";
+  <br>
+  28. А вот если вы используете инструменты не к месту, то у него сразу же теряется уровень прочности;
+  <br>
+  29. 121 час игры - это год по игровому времени;
+  <br>
+  30. Торт сразу же исчезает, когда игрок надавливает на него поршнем;
+Интересные факты о: [Minecraft].
+  <br>
+  31. А вот зомби необходимо остерегаться, ведь они могут с небольшой вероятностью поджечь;
+  <br>
+  32. Чешуйница не боится эффекта иссушения;
+  <br>
+  33. Игрокам рекомендуется внимательно присмотреться к песку душ, там вы можете заметить лица гриферов;
+  <br>
+  34. Pocket Edition можно заметить в трейлере iOS7.
+И я заканчиваю свою статью, всем пока с вами был ZZima. До скорых встреч!
+Интересные факты о: [Minecraft]
